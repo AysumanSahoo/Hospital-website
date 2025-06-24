@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAPITAL HOSPITAL</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <nav>
+            <!--logo-->
+            <div class="logo">
+                <img src="image/images-removebg-preview.png" alt=" ">
+            </div>
+            <!-- Close logo-->
+            <!--start navbar-->
+            <i id="bar" class="fa-solid fa-bars"></i>
+
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="doctors.html">DOCTORS</a></li>
+                <li><a href="specialities.html">SPECIALITIES</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="appointment.html">MAKE APPOINTMENT</a></li>
+                <li><a href="admin.html">ADMIN LOGIN</a></li>
+            </ul>
+            <!--close navbar-->
+        </nav>
+        <div id="Appointment">
+            <div class="panel-body">
+                <form action="insert.php" method="post" style="padding-top: 10px;">
+                    <div class="appointment">
+                        <h1>Appointment Form</h1>
+                        <!--<input type="number" placeholder="Enter patientID" name="Patient_ID" />-->
+                        <input type="text" placeholder="Enter patientname" name="Patient_Name" required />
+                        <!--<label for="doctor">Doctor</label>-->
+                        <select name="Doctor" id="doctor_name">
+                            <option value="select Doctors" required>Select Doctors </option>
+                            <option value="Dr.shivam Jain,Cardiology">Dr.shivam Jain,cardiology</option>
+                            <option value="Dr.Kavita Singh,Neurology">Dr.Kavita Singh,Neurology</option>
+                            <option value="Dr.Dipti Sharma,Radiology">Dr.Dipti Sharma,radiology</option>
+                            <option value="Dr.Ayush Singh,Nephrology">Dr.Ayush Singh,nephrology</option>
+                            <option value="Dr.Arjun Baghel,Urology">Dr.Arjun Baghel,Urology</option>
+                            <option value="Dr.Abhishek Tomar,Cardiothoracic">Dr.Abhishek Tomar,Cardiothoracic</option>
+                            <option value="Dr.Kamala Das,Orthopaedics">Dr.Kamala Das,Orthopaedics</option>
+                            <option value="Dr.Anita Gupta,Neurosurgery">Dr.Anita Gupta,Neurosurgery</option>
+                            <option value="Dr.Arman Gangil,Pediatric">Dr.Arman Gangil,Pediatric</option>
+                            <option value="Dr.Deepak Bhadouria,Critical Care">Dr.Deepak Bhadouria,ENT</option>
+
+                        </select>
+                        <input type="number" placeholder="Enter PhoneNo" name="Phone_No" required />
+                        <input type="email" placeholder="Enter EmailID" name="Email_ID" required />
+                        <input type="date" placeholder="selectDate" name="Select_Date" required />
+                        <!--<label for="gender" >Select Gender</label>-->
+                        <select name="gender">
+                            <option value="select">Select Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="others">Others</option>
+                        </select>
+
+                        <input type="time" placeholder="selectTime" name="Select_Time" required />
+                        <button type="submit" name="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--Start footer-->
+    <div class="footer">
+        <div class="text1">
+            <h3>About Us</h3>
+            <p>24X7</p>
+            <p>Top Doctor</p>
+            <p>Best Care</p>
+            <p>Patient</p>
+        </div>
+        <div class="text1">
+            <h3>Speciality</h3>
+
+            
+            <p>ENT</p>
+            <p>Cardiology</p>
+            <p>Neurology</p>
+            <p>Radiology</p>
+
+        </div>
+        <div class="text1">
+            <h3>Best Teams</h3>
+            <p>Doctors</p>
+            <p>Nursing</p>
+            <p>Staff</p>
+            <p>Hospital</p>
+        </div>
+        <div class="text1">
+            <h3>Address</h3>
+            <p>Near XYZ Road</p>
+            <p>Capital Care</p>
+            <p>788-4444-458-56</p>
+        </div>
+        <div class="detail">
+            <button id="closebtn">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="content">
+            </div>
+
+
+        </div>
+    </div>
+    <!--Close footer-->
+    <script src="index.js">
+
+    </script>
+
+</body>
+
+</html>
