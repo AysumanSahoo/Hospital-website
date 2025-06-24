@@ -1,0 +1,552 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0067)https://portal.prestigegwl.org/AccSoft_PIMG/parents/TT_College.aspx -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>
+	Accsoft 2.0 : Parent Desk
+</title><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description"><meta name="author" content="Emperor Solutions">
+    <!-- Custom fonts for this template-->
+    <link href="./Accsoft 2.0 _ Parent Desk_files/all.min.css" rel="stylesheet" type="text/css"><link href="./Accsoft 2.0 _ Parent Desk_files/font-awesome.min.css" rel="stylesheet"><link href="./Accsoft 2.0 _ Parent Desk_files/css" rel="stylesheet"><link href="./Accsoft 2.0 _ Parent Desk_files/sb-admin-2.min.css" rel="stylesheet"><link href="./Accsoft 2.0 _ Parent Desk_files/myCalendar.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="./Accsoft 2.0 _ Parent Desk_files/mobile-responsive.css">
+    <style type="text/css">
+        .p_MyTable
+        {
+            background-color: #fff;
+            border: 1px solid #d2d6de; /*border-top: 3px solid #3c8dbc; border-right:1px solid #d2d6de; border-bottom:1px solid #d2d6de;*/
+            padding: 10px;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            -khtml-border-radius: 3px;
+            border-radius: 3px;
+            font-family: Tahoma,Arial, Sans-Serif, 'Arial Black';
+            font-size: 12px;
+            letter-spacing: 0.01em;
+            color: #4d4d4d;
+        }
+        
+        .p_MyTable td, th
+        {
+            padding: 3px 5px 5px 2px;
+            text-align: left;
+            line-height: 20px;
+            margin-left: 80px;
+        }
+        
+        .p_mGrid
+        {
+            background-color: #fff;
+            margin: 0 0 0 0;
+            border-collapse: collapse;
+            word-wrap: break-word;
+            border: 1px solid #d2d6de;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            -khtml-border-radius: 3px;
+            border-radius: 3px;
+            font-family: Tahoma,Arial, Sans-Serif, 'Arial Black';
+            font-size: 11px;
+            letter-spacing: 0.01em;
+            color: #4d4d4d;
+        }
+        
+        .p_mGrid td
+        {
+            padding: 4px;
+            border-bottom: 1px solid #e3e3e3;
+            border-right: 1px solid #e3e3e3;
+            font-size: 11px;
+            letter-spacing: 0.01em;
+            color: #4d4d4d;
+        }
+        
+        .p_mGrid th
+        {
+            padding: 4px 3px 4px 5px;
+            color: #3c3c3c;
+            background: #f0f0f0;
+            border: 1px solid #d2d6de;
+            font-weight: normal;
+            font-size: 11px !important;
+        }
+        
+        .p_mGrid th a
+        {
+            text-decoration: none;
+            padding: 4px 1px;
+            color: #3c3c3c;
+            text-decoration: underline;
+        }
+        .p_mGrid .alt
+        {
+            background: #f8f8f8;
+        }
+        .p_mGrid .pgr
+        {
+            background: #fffff;
+            text-align: right !important;
+        }
+        .p_mGrid .pgr table
+        {
+            margin: 2px 0;
+        }
+        .p_mGrid .pgr td
+        {
+            border-width: 0;
+            padding: 0 0 0 0;
+            border: 1px solid #dddddd;
+            font-weight: bold;
+            color: #333333;
+            line-height: 26px;
+            width: 26px;
+            text-align: center;
+            font-size: 12px;
+        }
+        
+        .p_mGrid .pgr td span
+        {
+            border-width: 0;
+            padding: 2px 4px;
+            border: none;
+            font-weight: bold;
+            color: #337ab7;
+            font-size: 12px;
+        }
+        .p_mGrid .pgr a
+        {
+            color: #333333;
+            text-decoration: none;
+        }
+        .p_mGrid .pgr a:hover
+        {
+            color: #3776D6;
+            text-decoration: none;
+        }
+        .p_mGrid .pgr td:hover
+        {
+            color: #000;
+            text-decoration: none;
+        }
+    </style>
+
+    <style>
+        .hide
+        {
+            display:none;
+        }
+        .panel-responsive
+        {
+            background-color: #DDD;
+            border-width: 2px;
+            border-color: #AB6529;
+            border-style: solid;
+            border-radius: 5px;
+            padding: 20px;
+            width: 550px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        @media only screen and (max-width: 600px)
+        {
+            .panel-responsive
+            {
+                width: 95%;
+            }
+        }
+        .modalBackground
+        {
+            background-color: rgba(0,0,0,0.3);
+        }
+        .modalBackground.dark
+        {
+            background-color: rgba(100,100,100,1)!important;
+        }
+        @-webkit-keyframes blinker {
+          from {opacity: 1.0;}
+          to {opacity: 0.0;}
+        }
+        .blink{
+	        text-decoration: blink;
+	        -webkit-animation-name: blinker;
+	        -webkit-animation-duration: 0.6s;
+	        -webkit-animation-iteration-count:infinite;
+	        -webkit-animation-timing-function:ease-in-out;
+	        -webkit-animation-direction: alternate;
+	
+        }
+
+        @media screen and (max-width: 600px)
+        {
+            body{font-size:12px;}
+            nav.navbar.navbar-expand.navbar-light.bg-white.topbar.mb-4.static-top.shadow 
+            {
+                width:100%; 
+            }
+        
+            li#std_name_mobile {display:block !important;}
+            .mr-2 d-none d-lg-inline text-gray-600 small {display:block !important;}
+        
+            li#std_nme_mobile {display:block !important;}
+            .mr-2 d-none d-lg-inline text-gray-600 small {display:block !important;}
+        
+            .text-xs.font-weight-bold.text-primary.text-uppercase.mb-1 {float:none !important;}
+            .text-xs.font-weight-bold.text-primary.text-uppercase.mb-1 {text-align:left !important;}
+        
+            .col.mr-2 br {display: none;}
+            #mob_log{text-align:center;}
+            h6{font-size:16px;}
+        
+        }
+           
+    </style>
+<link href="./Accsoft 2.0 _ Parent Desk_files/WebResource.axd" type="text/css" rel="stylesheet"></head>
+<body id="page-top">
+    <form name="aspnetForm" method="post" action="https://portal.prestigegwl.org/AccSoft_PIMG/parents/TT_College.aspx" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="eoN8Jfje4kA8+u5mrcU6k9yVQk0alXH/Z5eJPyzczHvR8ypy1ng6VOPdsFilKu8ewPVKDO6qB2YIA+y1aKe4I9lZJ7BIbrRMRRNZtJltoouBot1Du4lADjX5HjR1qA/SeRqcf9In3BcA6LxWsaYLr2FQbGYRJGT3MB4kf/HxMDGPdQhnlmciShpaUrsrAmFdPb57nhQii5DhiVOp4340SSxkfZ/zxyRoWWAZxYZS9ZrLLlT8D1CSmxzDuLnsyjetKhUB5PgH3Lseq+oF/EEtsR5H5B8Ztb6FWdkfauPR4SPyQzI7HOG1M5v2kdPVKVgG4/VgqeakKMMh1iuU35WXRFwm0QEBY9OLxw4iOZZHkVY90etdTKrXgDTktmgwzSBgT9zPIIQBSa4uxjixKZ0YJm5xZpVee54xHhhFkuGWPtU2acKmCBnc47Zm920Wewk7llrgVSH6m3kHAH+Ncac4cKzvv6/pHt9PPVNipYbRUzL6ZBaOf9mUfmp7EDIj2kSkFW8BlgPF2BFOuvGy/wazyKVDzCvGqNGBgKEDHI73MKgxGqI18ajicw0GjS9aV0IOsX/wkB+ficEaRfRjcUvtFn4BC1pwmg2Ii4ohqnORfKvrepzuv9hh66D0NPns+G5jIP3R3M4RBPHVKU7Ay3b3GyI7QJtBUyS9yoo5qn/vTAhIXfjAx25Cvup4wGWCF6yvNr7jXHMS+4MJbGBcM+h3RnFw6n8mnxzfI+sW4A3fNOcChR/kfXXCriFIwjOrd5Q3H1MD3NaKEWR7TNdsMfdq8WzYULy5yT0qGV7Q1Je21n4PpRdP0ozREG3qu0dR2i7yzDA0gJCnSJMFxqB2n7lzSkMxO29hft2eiY6oqUSB4efz7k0Hu7TB0iwmcf30zuE1BnV6dh/myWkAG6JhFLX+DeFoF6b1vuNwtD0OOatNNTjkX2PENY9TSGP6fOlOiGUTRTfmTYnlB1/EfS/pMbqNdowZ35BdeZWh4OCRrwj6tfq6KuYhajcGFjCaJuFMXAxJdzaiqeWM2ivc8XuvR3O8xJzXL5dN+KTqkPHFh4WYtE906VuKRKLy0nss+FwT68yISXE0/xPReLXiObqW5Rm/xMX9RJXcGo0lHuryWxg1dFO/SvVjWL49yLwAsYubyha3VRb6O1VNDAX1RTsDlrNzvBHIb6ngpTNG/J9ldUIB3saDFDw9djhm78T02PxMeZntux7ZfFmFlbx4mmLabxgBQRkyTM0/5VjP1pf0/cNarEwh3LiYmKaa3dscFtvfeTolb5L8WBmlM8okE51v1qkNENlml91MyblD26IMA7emgejJtkgh8fZptpWAhmtB86YcHCr6ED9jMjQaQYFcGlpsR5ka2cmbM89313B5PdbrfmgujNYAv3Z5AnHG429kEPn34coGDeswTGecWtMQeViWHg==">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="./Accsoft 2.0 _ Parent Desk_files/WebResource(1).axd" type="text/javascript"></script>
+
+
+<script src="./Accsoft 2.0 _ Parent Desk_files/ScriptResource.axd" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="./Accsoft 2.0 _ Parent Desk_files/ScriptResource(1).axd" type="text/javascript"></script>
+<script src="./Accsoft 2.0 _ Parent Desk_files/ScriptResource(2).axd" type="text/javascript"></script>
+<script src="./Accsoft 2.0 _ Parent Desk_files/ScriptResource(3).axd" type="text/javascript"></script>
+<script src="./Accsoft 2.0 _ Parent Desk_files/ScriptResource(4).axd" type="text/javascript"></script>
+<script src="./Accsoft 2.0 _ Parent Desk_files/ScriptResource(5).axd" type="text/javascript"></script>
+<script src="./Accsoft 2.0 _ Parent Desk_files/ScriptResource(6).axd" type="text/javascript"></script>
+<script src="./Accsoft 2.0 _ Parent Desk_files/ScriptResource(7).axd" type="text/javascript"></script>
+<script src="./Accsoft 2.0 _ Parent Desk_files/ScriptResource(8).axd" type="text/javascript"></script>
+<script src="./Accsoft 2.0 _ Parent Desk_files/ScriptResource(9).axd" type="text/javascript"></script>
+<script src="./Accsoft 2.0 _ Parent Desk_files/ScriptResource(10).axd" type="text/javascript"></script>
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="1F5BDD41">
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="">
+	<input type="hidden" name="__PREVIOUSPAGE" id="__PREVIOUSPAGE" value="ZoDu6Ib52-r1HuyHRuw6c1v7l6yivabI46_OHq9Rpdkj3qrNOI39oDWTix54FlW7HxIZ7tCZa1ajf3p0bbO7ObcogV__RRm72z-wsC205aKTI9UWefSjKHP7cwgkhcNq0">
+</div>
+    <input type="hidden" name="ctl00$hdnCompanyID" id="ctl00_hdnCompanyID" value="1">
+    <input type="hidden" name="ctl00$hdnFinYearID" id="ctl00_hdnFinYearID" value="18">
+    <input type="hidden" name="ctl00$hdnStudentID" id="ctl00_hdnStudentID" value="12382">
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <ul id="accordionSidebar" class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion toggled">
+            <!-- Sidebar - Brand -->
+            
+            
+            
+            
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item" id="std_name_mobile" style="display: none;"><a class="nav-link" href="https://portal.prestigegwl.org/AccSoft_PIMG/parents/TT_College.aspx#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img class="img-profile rounded-circle" src="./Accsoft 2.0 _ Parent Desk_files/41220112512_Stu_31d68bdb3b054afaa5166330b48ad26c_WhatsApp_Image_2023-09-01_at_11.14.03_AM.jpeg">
+                AYSUMAN SAHOO
+            </a></li>
+            <li class="nav-item active"><a class="nav-link" href="https://portal.prestigegwl.org/AccSoft_PIMG/parents/ParentDesk.aspx">
+                <i class="fas fa-fw fa-tachometer-alt"></i><span>Dashboard</span></a> </li>
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+            <!-- Heading -->
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item"><a class="nav-link collapsed" href="https://portal.prestigegwl.org/AccSoft_PIMG/parents/TT_College.aspx#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"><i class="fas fa-fw fa-cog">
+                </i><span>General Information</span> </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div id="ctl00_DivGI" class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="https://portal.prestigegwl.org/AccSoft_PIMG/parents/StudentPersonalDetails.aspx">Your Profile</a> <a class="collapse-item" href="https://portal.prestigegwl.org/AccSoft_PIMG/parents/ChangePsw.aspx">Change Password</a> <a href="https://portal.prestigegwl.org/AccSoft_PIMG/parents/StudentStatus.aspx?ID=1" id="ctl00_hefNN" class="collapse-item">News/Notices</a> <a href="https://portal.prestigegwl.org/AccSoft_PIMG/parents/holidayChart.aspx" id="ctl00_hefAC" class="collapse-item">Academic Calender</a>
+                        <a href="https://portal.prestigegwl.org/Admin/Portal/PolicyList.aspx?catId=3" id="ctl00_hefSP" class="collapse-item">
+                            <span id="ctl00_lblPolicies">School Policies</span></a>
+                    </div>
+                </div>
+            </li>
+            <!-- Nav Item - Utilities Collapse Menu -->
+            
+            
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+            <li id="mob_log"><a class="dropdown-item" href="https://portal.prestigegwl.org/AccSoft_PIMG/StudentLogout.aspx" style="color: #fff;"><i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400">
+                </i>
+                <br>
+                Logout </a></li>
+            <!-- Heading -->
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" type="button" id="sidebarToggle">
+                </button>
+            </div>
+        </ul>
+        <!-- End of Sidebar -->
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+            <!-- Main Content -->
+            <div id="content">
+                <!-- Topbar -->
+                <nav id="ctl00_accordionSidebarTop" class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" type="button" class="btn btn-link d-md-none rounded-circle">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <!-- Topbar Search -->
+                    
+                    <div class="input-group">
+                        <img id="ctl00_companylogo" src="./Accsoft 2.0 _ Parent Desk_files/Inst_Logo_59a29e35c7ed4664830050211490ffd8_PimgLogo.png" style="border-width:0px;width: 40px; height: 40px;">
+                        <h6 style="margin-left: 15px; margin-top: 7px; font-weight: bold; font-size: 14px!important;">
+                            Prestige Institute of Management and Research, Gwalior</h6>
+                    </div>
+                    
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+                        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                        <!-- UNWANTED SEARCH ICON WHICH DOES NOT SEARCH REMOVED -->
+                        
+                        <!-- Nav Item - Alerts -->
+                        
+                        <li class="nav-item dropdown no-arrow mx-1 mobile-hide"><a class="nav-link dropdown-toggle" href="https://portal.prestigegwl.org/AccSoft_PIMG/parents/TT_College.aspx#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: 14px;">Scholar No.
+                            <br>
+                            41220112512
+                        </a></li>
+                        <div class="topbar-divider d-none d-sm-block">
+                        </div>
+                        <li class="nav-item dropdown no-arrow mx-1 mobile-hide"><a class="nav-link dropdown-toggle" href="https://portal.prestigegwl.org/AccSoft_PIMG/parents/TT_College.aspx#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: 14px;">Class
+                            <br>
+                            BCA-3 SEM
+                            , SEC-
+                            A
+                        </a></li>
+                        <li class="nav-item dropdown no-arrow"><a class="nav-link dropdown-toggle communication-notification-button" onclick="javascript:return void(0)" href="https://portal.prestigegwl.org/AccSoft_PIMG/parents/TT_College.aspx#">
+                            <img id="imgNotify" src="./Accsoft 2.0 _ Parent Desk_files/p_notify_blue.png" style="border-width:0px;">
+                        </a>
+                            <div class="communication-notification-popup ">
+                                <h2 class="quick_head1">
+                                    Communications</h2>
+                                <i class="fa fa-times close-button"></i>
+                                <div id="idNotificationPanel" class="messages">
+                                </div>
+                                <div class="pb-2 text-center">
+                                    <a class="btn btn-primary btn-sm" href="https://portal.prestigegwl.org/AccSoft_PIMG/Communication/StudentLogList.aspx">
+                                        View All</a>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow"><a class="nav-link dropdown-toggle" href="https://portal.prestigegwl.org/AccSoft_PIMG/parents/TT_College.aspx#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="mr-2 d-none d-lg-inline small text-gray-500">
+                                AYSUMAN SAHOO</span>
+                            <img class="img-profile bg-dark rounded-circle" src="./Accsoft 2.0 _ Parent Desk_files/41220112512_Stu_31d68bdb3b054afaa5166330b48ad26c_WhatsApp_Image_2023-09-01_at_11.14.03_AM.jpeg">
+                        </a>
+                            <!-- Dropdown - User Information -->
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                                <div class="pl-4 text-gray">
+                                    <div>
+                                        Name :
+                                        AYSUMAN SAHOO</div>
+                                    <div>
+                                        Scholar No. :
+                                        41220112512</div>
+                                    <div>
+                                        Class :
+                                        BCA-3 SEM, A</div>
+                                </div>
+                                <div class="dropdown-divider">
+                                </div>
+                                <a class="dropdown-item" href="https://portal.prestigegwl.org/AccSoft_PIMG/parents/StudentPersonalDetails.aspx"><i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400">
+                                </i>Profile </a><a class="dropdown-item" href="https://portal.prestigegwl.org/AccSoft_PIMG/parents/ChangePsw.aspx"><i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400">
+                                </i>Change Password </a>
+                                <div class="dropdown-divider">
+                                </div>
+                                <a class="dropdown-item" href="https://portal.prestigegwl.org/AccSoft_PIMG/StudentLogout.aspx"><i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>Logout </a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <div style="padding: 5px;">
+                    
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+        <tbody><tr>
+            <td>
+                <table width="100%" cellpadding="0" cellspacing="0">
+                    <tbody><tr>
+                        <td>
+                            <span class="heading-page">Class Time Table</span>
+                        </td>
+                        <td align="right">
+                            <input type="submit" name="ctl00$ContentPlaceHolder1$btnBack" value="Back" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$btnBack&quot;, &quot;&quot;, false, &quot;&quot;, &quot;ParentDesk.aspx&quot;, false, false))" id="ctl00_ContentPlaceHolder1_btnBack" class="Button" style="width:80px;">
+                        </td>
+                    </tr>
+                </tbody></table>
+            </td>
+        </tr>
+        <tr>
+            <td align="left" style="height: 5px; border-bottom: solid 2px #132f57;">
+            </td>
+        </tr>
+        <tr>
+            <td align="left" style="height: 5px;">
+            </td>
+        </tr>
+    </tbody></table>
+    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tbody><tr>
+            <td class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div>
+                            Session</div>
+                        <select name="ctl00$ContentPlaceHolder1$ddlSession" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ContentPlaceHolder1$ddlSession\&#39;,\&#39;\&#39;)&#39;, 0)" id="ctl00_ContentPlaceHolder1_ddlSession" class="mybox" style="height:30px;width:100%;">
+	<option value="0">--Select--</option>
+	<option selected="selected" value="18">2024-2025 </option>
+	<option value="17">2023-2024 </option>
+	<option value="16">2022-2023 </option>
+	<option value="15">2021-2022 </option>
+	<option value="14">2020-2021 </option>
+	<option value="13">2019-2020</option>
+	<option value="12">2018-2019 </option>
+	<option value="11">2017-2018 </option>
+	<option value="10">2016-2017 </option>
+	<option value="9">2015-2016 </option>
+	<option value="8">2014-2015</option>
+	<option value="7">2013-2014</option>
+	<option value="6">2012-2013</option>
+	<option value="5">2011-2012</option>
+	<option value="4">2010-2011</option>
+	<option value="3">2009-2010</option>
+	<option value="2">2008-2009</option>
+	<option value="1">2007-2008 </option>
+
+</select>
+                    </div>
+                    <div class="col-md-3">
+                        <div>
+                            Academic Session</div>
+                        <select name="ctl00$ContentPlaceHolder1$ddlExamSession" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ContentPlaceHolder1$ddlExamSession\&#39;,\&#39;\&#39;)&#39;, 0)" id="ctl00_ContentPlaceHolder1_ddlExamSession" class="mybox" style="height:30px;width:100%;">
+	<option value="0">--Select--</option>
+	<option selected="selected" value="28">Mid Term Examination Aug-Sep 2024</option>
+	<option value="27">Jul-Dec 2024</option>
+
+</select>
+                    </div>
+                    <div class="col-md-3">
+                        <div>
+                            For this Week (Starts with Monday)</div>
+                        <input name="ctl00$ContentPlaceHolder1$txtMon" type="text" value="04-Nov-2024" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ContentPlaceHolder1$txtMon\&#39;,\&#39;\&#39;)&#39;, 0)" onkeypress="if (WebForm_TextBoxKeyHandler(event) == false) return false;" id="ctl00_ContentPlaceHolder1_txtMon" class="mybox" style="height:26px;width:110px;">
+                        
+                        <input name="ctl00$ContentPlaceHolder1$txtSat" type="text" value="09-Nov-2024" id="ctl00_ContentPlaceHolder1_txtSat" disabled="disabled" class="mybox" style="height:26px;width:110px;">
+                        
+                    </div>
+                    
+                    <div class="col-md-3">
+                        <div>
+                            &nbsp;</div>
+                        <input type="submit" name="ctl00$ContentPlaceHolder1$btnShowC" value="Show" id="ctl00_ContentPlaceHolder1_btnShowC" class="p_mybut new" style="width:80px;">
+                        <input type="submit" name="ctl00$ContentPlaceHolder1$btnExportC" value="Export" id="ctl00_ContentPlaceHolder1_btnExportC" class="p_mybut print" style="width:80px;">
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </tbody></table>
+    <div style="overflow-x: auto; position: relative;">
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+            <tbody><tr>
+                <td class="container">
+                    <div class="row mt-2">
+                        <div class="col-md-12">
+                            <div>
+
+</div>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-12">
+                            <div>
+
+</div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody></table>
+    </div>
+      
+
+                </div>
+                
+                
+                <!-- End of Topbar -->
+            </div>
+        </div>
+    </div></form>
+    <!-- Portal Fees Popup -->
+    
+    <script type="text/javascript" src="./Accsoft 2.0 _ Parent Desk_files/jquery.min.js.download"></script>
+    <script type="text/javascript" src="./Accsoft 2.0 _ Parent Desk_files/bootstrap.bundle.min.js.download"></script>
+    <script type="text/javascript" src="./Accsoft 2.0 _ Parent Desk_files/jquery.easing.min.js.download"></script>
+    <script type="text/javascript" src="./Accsoft 2.0 _ Parent Desk_files/sb-admin-2.min.js.download"></script>
+    <script type="text/javascript" src="./Accsoft 2.0 _ Parent Desk_files/Chart.min.js.download"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $(".communication-notification-button").click(function () {
+                $(".communication-notification-popup").slideDown(100);
+                $("#idNotificationPanel").html("Loading...");
+                $.ajax({
+                    url: '../api/communication.asmx/GetTodaysNotificationsForStudent?companyId=1&sessionId=18&studentId=12382',
+                    type: 'GET',
+                    success: function (data) {
+                        //console.log(data);
+                        var xml_node = $('string', data);
+                        //console.log(xml_node.text());
+                        $("#idNotificationPanel").html(xml_node.text());
+                    }
+                });
+            });
+            $(".communication-notification-popup .close-button").click(function () {
+                $(".communication-notification-popup").slideUp(100);
+            });
+        });
+    </script>
+    
+
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.CalendarBehavior, {"cssClass":"MyCalendar","format":"dd-MMM-yyyy","id":"ctl00_ContentPlaceHolder1_CalendarExtender3"}, null, null, $get("ctl00_ContentPlaceHolder1_txtMon"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.CalendarBehavior, {"cssClass":"MyCalendar","format":"dd-MMM-yyyy","id":"ctl00_ContentPlaceHolder1_CalendarExtender2"}, null, null, $get("ctl00_ContentPlaceHolder1_txtSat"));
+});
+//]]>
+</script>
+
+
+
+</body></html>
